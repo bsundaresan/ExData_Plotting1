@@ -1,3 +1,9 @@
+#Downloading and extracting the data
+
+url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+
+unzip(download.file(url, "./household.zip"))
+
 #Read the data into R
 
 household <- read.table("./household_power_consumption.txt", sep=";")
